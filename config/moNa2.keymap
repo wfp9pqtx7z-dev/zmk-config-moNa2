@@ -48,15 +48,13 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E     &kp R             &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D     &kp F             &kp G                                 &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V             &kp B        &lt 4 COLON              &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LALT  &lt 4 LANGUAGE_2  &lt 2 SPACE  &to_layer_0 LS(LANG1)    &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q               &kp W         &kp E     &kp R             &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &lt 6 P
+&mt LEFT_CONTROL A  &kp S         &kp D     &kp F             &kp G                                       &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z    &kp X         &kp C     &kp V             &kp B        &lt 4 COLON                    &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT LS(SLASH)
+&kp LCTRL           &kp LEFT_WIN  &kp LALT  &lt 4 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &lt 5 ESCAPE
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp PLUS MINUS>;
         };
 
         layer_1 {
