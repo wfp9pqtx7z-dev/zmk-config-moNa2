@@ -16,6 +16,6 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
-      revision: main
+      revision: e9472d6c  # ZMK v0.2 対応の最終コミット (v0.2互換シム削除前)
   self:
     path: config
